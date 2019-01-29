@@ -1,5 +1,5 @@
 .App {
-  text-align: center;
+  display: flex;
 }
 
 .App-logo {
@@ -21,6 +21,66 @@
 .App-link {
   color: #61dafb;
 }
+
+h1 {
+  margin: 0px;
+}
+h2 {
+  margin: 0px;
+}
+h3 {
+  margin: 0px;
+}
+
+.starting_component_div {
+  height: 100%;
+  width: 100%;
+}
+
+.header_div {
+  height: 150px;
+  width: 100vw;
+  background-color: slategray;
+  position: relative;
+  top: 0;
+}
+
+.main_body_div {
+  height: calc(100vh - 150px);
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+  .main_content_div {
+    height: 100%;
+    width: calc(100% - 300px);
+    display: flex;
+    flex-direction: row;
+  }
+    .display_parent_div {
+      height: 100%;
+      width: calc(100% - 450px);
+      background-color: coral;
+    }
+    .option_parent_div {
+      height: 100%;
+      width: 450px;
+      background-color: #61dafb;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+    }
+      .option_a {
+        background-color: darkseagreen;
+        width: calc(100% - 20px);
+        height: calc(33.33% - 15px);
+      }
+  .main_side_div {
+    height: 100%;
+    width: 300px;
+    background-color: tomato;
+  }
 
 @keyframes App-logo-spin {
   from {
